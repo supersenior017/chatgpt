@@ -1,0 +1,35 @@
+.descTitleGroup {
+    display: grid;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.descTitleGroup .descTitle {
+    grid-area: 1/1/-1/-1;
+}
+
+.descTitleGroup .descTitle:nth-of-type(1) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 18%, 0% 28%);
+}
+
+.descTitleGroup .descTitle:nth-of-type(2) {
+    clip-path: polygon(0% 32%, 100% 22%, 100% 66%, 0% 76%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, #0B263B 20%, white 65%);
+    background: linear-gradient(177deg, #0B263B 20%, white 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+}
+
+.descTitleGroup .descTitle:nth-of-type(3) {
+    clip-path: polygon(0% 80%, 100% 70%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, #0B263B 60%, white 100%);
+    background: linear-gradient(177deg, #0B263B 60%, white 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+}
+
+@media (prefers-color-scheme: dark) {}
